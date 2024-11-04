@@ -1,0 +1,32 @@
+
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> echo "" >>hello_world  
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git commit -m "hello_worldを追加
+" 
+[master (root-commit) bd6b1d2] hello_worldを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "OneDrive/\343\203\207\343\202\271\343\202\257\343\203\210\343\203\203\343\203\227/git_challenge/hello_world.txt"
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git log --oneline
+bd6b1d2 (HEAD -> master) hello_worldを追加
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git add hello_world.txt         
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git commit -m "日本語訳を追記"
+[master 520d325] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git log --oneline
+520d325 (HEAD -> master) 日本語訳を追記
+bd6b1d2 hello_worldを追加
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git branch -m master main       
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git remote add origin git@github.com:Minami0113/git_challenge.git
+PS C:\Users\kuwan\OneDrive\デスクトップ\git_challenge> git push -u origin main         
+Enter passphrase for key '/c/Users/kuwan/.ssh/id_rsa': 
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (12/12), 827 bytes | 91.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Minami0113/git_challenge.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
